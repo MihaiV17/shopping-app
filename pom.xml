@@ -31,8 +31,8 @@
        </snapshotRepository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:git@github.com:MihaiV17/numele-repo-tau.git</connection>
-        <developerConnection>scm:git:git@github.com:MihaiV17/numele-repo-tau.git</developerConnection>
+        <connection>scm:git:git@github.com:MihaiV17/shopping-app.git</connection>
+        <developerConnection>scm:git:git@github.com:MihaiV17/shopping-app.git</developerConnection>
         <tag></tag>
     </scm>
 </project>
