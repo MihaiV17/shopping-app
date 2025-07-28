@@ -1,15 +1,12 @@
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.example</groupId>
     <artifactId>shopping-app</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-
     <dependencies>
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -23,4 +20,19 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://192.168.1.135:5386/repository/nexus-repo-releases/</url>
+        </repository>
+       <snapshotRepository>
+          <id>nexus-snapshots</id>
+          <url>http://192.168.1.135:5386/repository/nexus-repo-snapshots/</url>
+       </snapshotRepository>
+    </distributionManagement>
+    <scm>
+        <connection>scm:git:git@github.com:MihaiV17/numele-repo-tau.git</connection>
+        <developerConnection>scm:git:git@github.com:MihaiV17/numele-repo-tau.git</developerConnection>
+        <tag></tag>
+    </scm>
 </project>
